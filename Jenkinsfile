@@ -30,7 +30,7 @@ pipeline {
                 classifications: [
                     [key: 'Commit', value: '<a href="${env.GIT_COMMIT}">${env.GIT_COMMIT}</a>'],
                     [key: 'Submitter', value: '${env.BUILD_USER}']
-                ]
+                ],
 
                 reportTitle: 'My report',
                 sortingMethod: 'ALPHABETICAL',
