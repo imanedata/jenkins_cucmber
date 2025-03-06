@@ -17,5 +17,8 @@
     "outputFolder": "cypress/cucumber-json",
     "filePrefix": "",
     "fileSuffix": ".cucumber"
+  },
+  "scripts": {
+    "cy:run": "cypress run"
   }
 }
