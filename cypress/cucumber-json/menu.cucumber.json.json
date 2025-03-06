@@ -1,0 +1,102 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Vérification du menu",
+    "line": 1,
+    "id": "vérification-du-menu",
+    "tags": [],
+    "uri": "menu.feature",
+    "elements": [
+      {
+        "id": "vérification-du-menu;quand-je-clique-sur-le-bouton-\"item\",-rien-ne-change",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Quand je clique sur le bouton \"Item\", rien ne change",
+        "tags": [
+          {
+            "name": "@item",
+            "line": 2
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "je suis sur la page des produits",
+            "result": {
+              "status": "passed",
+              "duration": 1388000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "je clique sur le bouton \"Item\" du menu",
+            "result": {
+              "status": "passed",
+              "duration": 1912000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "aucune redirection ou changement de page ne se produit",
+            "result": {
+              "status": "passed",
+              "duration": 15000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "vérification-du-menu;quand-je-clique-sur-le-bouton-\"logout\",-je-suis-redirigé-vers-la-page-de-connexion",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Quand je clique sur le bouton \"Logout\", je suis redirigé vers la page de connexion",
+        "tags": [
+          {
+            "name": "@logout",
+            "line": 8
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "je suis sur la page des produits",
+            "result": {
+              "status": "passed",
+              "duration": 981000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "je clique sur le bouton \"Logout\"",
+            "result": {
+              "status": "passed",
+              "duration": 2031000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "je devrais voir le bouton \"Login\"",
+            "result": {
+              "status": "passed",
+              "duration": 19000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
