@@ -2,7 +2,7 @@ pipeline{
 
     agent{
         docker{
-            image "cucumber/cucumber-build"
+            image "cypress/browsers"
             args "--entrypoint=''"
         }
     }
