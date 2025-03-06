@@ -28,10 +28,9 @@ pipeline {
                 skippedStepsNumber: 1,
                 failedStepsNumber: 1,
                 classifications: [
-                    [key: 'Commit', value: '<a href="${env.GIT_COMMIT}">${env.GIT_COMMIT}</a>'],
-                    [key: 'Submitter', value: '${env.BUILD_USER}']
+                    [key: 'Commit', value: '<a href="${GERRIT_CHANGE_URL}">${GERRIT_PATCHSET_REVISION}</a>'],
+                    [key: 'Submitter', value: '${GERRIT_PATCHSET_UPLOADER_NAME}']
                 ],
-
                 reportTitle: 'My report',
                 sortingMethod: 'ALPHABETICAL',
                 trendsLimit: 100
